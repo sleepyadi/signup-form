@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'Mukta';
-    src: url();
+    src: url('../fonts/Mukta-Regular.ttf');
 }
 
 
@@ -25,12 +25,51 @@ body {
 
 
 .image-sidebar {
-    flex: 35%;
+    flex: 30%;
     background-image: url('../img/bg_image.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
 }
 
+.logo {
+    height: 15%;
+    margin-top: 35%;
+    background-color: rgba(0,0,0,0.4);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo .logo-img {
+    height: 90%;
+}
+
+.logo .logo-title {
+    font-family: 'Norse';
+    font-size: 5.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.image-sidebar .credit {
+    padding: 0.5em;
+    margin-top: auto;
+    color: white;
+    text-align: center;
+}
+
+.image-sidebar a  {
+    color: white;
+}
+
+
 .form-content {
-    flex: 65%;
+    flex: 70%;
 }
