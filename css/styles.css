@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('../fonts/Norse-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Mukta';
+    src: url();
+}
+
+
+* {
+    border: 1px solid red;
+}
+
+:root {
+    font-family: 'Mukta', Arial, Helvetica,sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+
+.image-sidebar {
+    flex: 35%;
+    background-image: url('../img/bg_image.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.form-content {
+    flex: 65%;
+}
