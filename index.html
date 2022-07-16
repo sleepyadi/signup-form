@@ -31,38 +31,38 @@
             <section class="form-elements">
 
                 <div class="form-element">
-                    <label for="first_name">FIRST NAME</label>
-                    <input type="text" id="first_name" name="first_name">
+                    <label for="first_name">FIRST NAME<abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="text" id="first_name" name="first_name" required>
                 </div>
 
                 <div class="form-element">
-                    <label for="last_name">LAST NAME</label>
-                    <input type="text" id="last_name" name="last_name">
+                    <label for="last_name">LAST NAME<abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="text" id="last_name" name="last_name" required>
                 </div>
 
                 <div class="form-element">
-                    <label for="user_mail">EMAIL</label>
-                    <input type="email" id="user_mail" name="user_mail">
+                    <label for="user_mail">EMAIL<abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="email" id="user_mail" name="user_mail" required>
                 </div>
 
                 <div class="form-element">
-                    <label for="phone_number">PHONE NUMBER</label>
-                    <input type="tel" id="phone_number" name="phone_number">
+                    <label for="phone_number">PHONE NUMBER<abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="tel" id="phone_number" name="phone_number" required>
                 </div>
 
                 <div class="form-element">
-                    <label for="pwd">PASSWORD</label>
-                    <input type="password" id="pwd" name="pwd">
+                    <label for="pwd">PASSWORD<abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="password" id="pwd" name="pwd" class="error" required>
                 </div>
 
                 <div class="form-element">
-                    <label for="confirm_pwd">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm_pwd "name="confirm_pwd">
+                    <label for="confirm_pwd">CONFIRM PASSWORD<abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="password" id="confirm_pwd "name="confirm_pwd" class="error" required>
                 </div>
             </section>
         </form>
         <div class="form-footer">
-            <button>Create Account</button>
+            <button type="submit" form="form-body">Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </div>

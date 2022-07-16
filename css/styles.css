@@ -138,7 +138,24 @@ input {
     border-radius: 3px;
     font-size: 1.1rem;
     padding: 0.3em 0.4em;
+    outline: none;
 }
+
+.form-element input:focus {
+    border: 1px solid blue;
+    box-shadow: 3px 3px 5px blue;
+}
+
+.error {
+    border-color: red;
+}
+
+.form-element .error:focus {
+    border: 1px solid red;
+    box-shadow: 3px 3px 5px red;
+}
+
+/*---------------- FOOOTER -----------------*/
 
 .form-content .form-footer {
     flex: 34%;
