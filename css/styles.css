@@ -109,7 +109,8 @@ body {
 
 .form-content #form-body {
     flex: 32%;
-    padding: 1em 5em 1em 3em;
+    padding: 1em 5em 2em 3em;
+    box-shadow: 3px 3px 5px #888888;
 }
 
 #form-body .form-elements {
@@ -142,4 +143,29 @@ input {
 .form-content .form-footer {
     flex: 34%;
     background-color: #F9F7F7;
+    margin-top: 6px;
+    padding: 2em 3em;
+}
+
+.form-footer button {
+    border: none;
+    background-color: #596D48;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: white;
+    padding: 0.6em 2em;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    box-shadow: 3px 3px 5px #888888;
+}
+
+.form-footer p {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.form-footer p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #596D48;
 }
