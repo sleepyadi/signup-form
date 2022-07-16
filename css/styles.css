@@ -10,10 +10,11 @@
 
 
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 :root {
+    font-size: 100%;
     font-family: 'Mukta', Arial, Helvetica,sans-serif;
 }
 
@@ -32,7 +33,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    min-width: 0;
+    /* min-width: 0; */
 }
 
 .logo {
@@ -72,4 +73,73 @@ body {
 
 .form-content {
     flex: 70%;
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+
+
+.form-content .form-header {
+    flex: 34%;
+    background-color: #F9F7F7;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.form-header > h2 {
+    letter-spacing: 0.1em;
+    padding: 0 35% 0 5%;
+    font-weight: 600;
+}
+
+.form-header > h2:nth-child(1) {
+    margin-bottom: 0;
+}
+
+.form-header > h2:nth-child(2) {
+    margin-top: 0;
+}
+
+.form-header > h2:last-child {
+    margin-bottom: 5%
+}
+
+.form-content #form-body {
+    flex: 32%;
+    padding: 1em 5em 1em 3em;
+}
+
+#form-body .form-elements {
+    padding-right: 15em;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 5rem;
+    row-gap: 2rem;
+
+}
+
+.form-elements .form-element {
+    display:flex;
+    flex-direction: column;
+}
+
+.form-element label {
+    font-size: 0.95rem;
+}
+
+input {
+    border-width: 1px;
+    border-color: #E5E7EB;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    padding: 0.3em 0.4em;
+}
+
+.form-content .form-footer {
+    flex: 34%;
+    background-color: #F9F7F7;
 }
