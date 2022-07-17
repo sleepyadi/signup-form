@@ -188,6 +188,27 @@ input {
     box-shadow: 3px 3px 5px red;
 }
 
+.error + span {
+    position: relative;
+}
+
+.error + span::after {
+    content: "Password's don't match.";
+    color: red;
+    position: absolute;
+    margin-top: 0.2rem;
+    font-size: 0.9rem;
+}
+
+.error + span::before {
+    content: "✕";
+    position: absolute;
+    color: red;
+    font-weight: bold;
+    top: -24px;
+    right: -18px;
+}
+
 /*---------------- FOOTER -----------------*/
 
 .form-content .form-footer {
