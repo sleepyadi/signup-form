@@ -24,6 +24,7 @@ body {
     min-height: 100vh;
 }
 
+/* -----------------------SIDEBAR------------------------ */
 
 .image-sidebar {
     flex: 30%;
@@ -70,6 +71,7 @@ body {
     color: white;
 }
 
+/* -------------------FORM------------------------ */
 
 .form-content {
     flex: 70%;
@@ -106,6 +108,8 @@ body {
 .form-header > h2:last-child {
     margin-bottom: 5%
 }
+
+/* ---------------------------FORM ELEMENTS-------------------------- */
 
 .form-content #form-body {
     flex: 32%;
@@ -147,6 +151,34 @@ input {
     box-shadow: 3px 3px 5px blue;
 }
 
+/* Styling for valid inputs ✓ ✕ */
+.form-element input:invalid:not(.error) + span {
+    position: relative;
+}
+
+.form-element input:invalid:not(.error) + span::after {
+    content: "✕";
+    position: absolute;
+    color: red;
+    font-weight: bold;
+    top: -24px;
+    right: -18px;
+}
+
+.form-element input:valid:not(.error) + span {
+    position: relative;
+}
+
+.form-element input:valid:not(.error) + span::after {
+    content: "✓";
+    position: absolute;
+    color: green;
+    font-weight: bold;
+    top: -24px;
+    right: -18px;
+}
+
+
 .error {
     border-color: red;
 }
@@ -156,7 +188,7 @@ input {
     box-shadow: 3px 3px 5px red;
 }
 
-/*---------------- FOOOTER -----------------*/
+/*---------------- FOOTER -----------------*/
 
 .form-content .form-footer {
     flex: 34%;
